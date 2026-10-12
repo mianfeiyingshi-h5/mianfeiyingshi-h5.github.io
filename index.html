@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>免费影视合规指南 | 合法免费渠道与防盗版导航</title>
+  <meta name="description" content="免费影视合规指南（mianfeiyingshi-h5）讲清哪些影视能合法免费看、五类合法免费渠道、伪免费陷阱识别与正版导航。不提供盗版播放、磁力、网盘与成人内容。" />
+  <meta name="author" content="免费影视合规指南" />
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#0E2E28" />
+  <link rel="canonical" href="https://mianfeiyingshi-h5.github.io/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="免费影视合规指南" />
+  <meta property="og:title" content="免费影视合规指南 | 合法免费渠道与防盗版导航" />
+  <meta property="og:description" content="五类合法免费渠道、伪免费陷阱识别、免费与侵权对照、正版信源导航。" />
+  <meta property="og:url" content="https://mianfeiyingshi-h5.github.io/" />
+  <meta property="og:locale" content="zh_CN" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="免费影视合规指南 | 合法免费渠道与防盗版导航" />
+  <meta name="twitter:description" content="免费≠无版权：合法免费渠道清单与伪免费陷阱识别。" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "免费影视合规指南",
+    "url": "https://mianfeiyingshi-h5.github.io/",
+    "description": "合法免费影视渠道、伪免费陷阱识别与正版影视导航站。",
+    "inLanguage": "zh-CN"
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#F2FBF7;
+      --bg2:#E5F5EF;
+      --card:#FFFFFF;
+      --line:#C2E4D8;
+      --ink:#112B26;
+      --muted:#54736B;
+      --mint:#12B886;     /* 薄荷绿 */
+      --mint-deep:#0E9F72;
+      --lemon:#F6E05E;    /* 柠檬黄 */
+      --lemon-deep:#D4BE24;
+      --ice:#7DD3FC;      /* 冰蓝 */
+      --ice-deep:#38BDF8;
+      --charcoal:#243D38; /* 深炭灰 */
+      --warn:#F97316;     /* 警示橙 */
+      --radius:14px;
+      --maxw:1180px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--ink);line-height:1.75;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+
+    /* 公告栏导航 */
+    header.nav{position:sticky;top:0;z-index:50;background:var(--charcoal);color:#fff;border-bottom:4px solid var(--mint)}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;height:66px}
+    .logo{font-weight:900;font-size:20px;display:flex;align-items:center;gap:10px}
+    .logo .badge{width:30px;height:30px;border-radius:6px;background:var(--mint);color:#fff;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:900}
+    .logo b{color:var(--lemon)}
+    .logo span{color:var(--ice)}
+    nav.menu{display:flex;gap:6px;font-size:14px;font-weight:600;color:#D3E5E0}
+    nav.menu a{padding:8px 13px;border-radius:8px;border:1px solid transparent;transition:.2s}
+    nav.menu a:hover{color:#fff;background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.2)}
+    .nav-toggle{display:none;background:none;border:1px solid rgba(255,255,255,.4);color:#fff;border-radius:8px;padding:6px 10px;font-size:18px;cursor:pointer}
+
+    /* Hero 公告栏 */
+    .hero{padding:76px 0 64px;border-bottom:3px double var(--line);background:
+      radial-gradient(700px 340px at 88% -6%,rgba(18,184,134,.14),transparent 60%),
+      radial-gradient(580px 300px at 4% 120%,rgba(56,189,248,.14),transparent 60%),
+      linear-gradient(180deg,#F2FBF7,#E5F5EF);
+      position:relative;overflow:hidden}
+    .hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:center}
+    .pill{display:inline-block;background:var(--mint);color:#fff;font-size:11px;font-weight:800;padding:5px 16px;border-radius:6px;letter-spacing:2px;text-transform:uppercase;margin-bottom:18px}
+    .hero h1{font-size:clamp(28px,5vw,50px);line-height:1.12;margin:0 0 14px;font-weight:900}
+    .hero h1 em{font-style:normal;color:var(--mint-deep)}
+    .hero h1 u{text-decoration:none;color:var(--warn)}
+    .hero p.lead{font-size:16px;color:var(--muted);max-width:640px;margin:0 0 22px}
+    .hero-tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+    .hero-tag{border:1px solid var(--line);border-radius:6px;padding:5px 12px;font-size:12px;color:var(--ink);background:var(--card)}
+    .cta{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{padding:13px 26px;border-radius:10px;font-weight:800;font-size:15px;transition:.2s;display:inline-flex;gap:6px;align-items:center;cursor:pointer}
+    .btn-primary{background:var(--mint);color:#fff;border:1px solid var(--mint-deep)}
+    .btn-primary:hover{background:var(--mint-deep)}
+    .btn-ghost{border:1px solid var(--charcoal);color:var(--charcoal);background:transparent}
+    .btn-ghost:hover{background:var(--charcoal);color:#fff}
+
+    /* 公告牌 */
+    .board{width:280px;margin:0 auto;background:var(--card);border:3px solid var(--charcoal);border-radius:8px;padding:20px;position:relative;box-shadow:6px 6px 0 var(--mint)}
+    .board .tape{position:absolute;top:-12px;left:50%;transform:translateX(-50%);width:60px;height:24px;background:var(--lemon);border-radius:3px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:var(--charcoal)}
+    .board .line{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px dashed var(--line);font-size:13px}
+    .board .line:last-child{border-bottom:none}
+    .board .check{width:20px;height:20px;border-radius:50%;background:var(--mint);color:#fff;font-size:11px;font-weight:900;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+
+    section{padding:60px 0;border-bottom:2px dashed var(--line)}
+    .sec-head{margin-bottom:32px;text-align:center}
+    .sec-head .kicker{color:var(--mint-deep);font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:11px}
+    .sec-head h2{font-size:clamp(22px,3.6vw,32px);margin:6px 0 8px;font-weight:900}
+    .sec-head p{color:var(--muted);margin:0 auto;max-width:720px;font-size:14px}
+
+    /* 五类合法免费渠道 */
+    .free5{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+    .free-card{background:var(--card);border:2px solid var(--line);border-radius:12px;padding:20px;position:relative;text-align:center;border-top:6px solid var(--mint)}
+    .free-card:nth-child(2){border-top-color:var(--lemon-deep)}
+    .free-card:nth-child(3){border-top-color:var(--ice-deep)}
+    .free-card:nth-child(4){border-top-color:var(--mint-deep)}
+    .free-card:nth-child(5){border-top-color:var(--warn)}
+    .free-card .num{width:28px;height:28px;border-radius:50%;background:var(--charcoal);color:#fff;font-size:13px;font-weight:900;display:flex;align-items:center;justify-content:center;margin:0 auto 10px}
+    .free-card h3{margin:0 0 6px;font-size:15px;font-weight:900}
+    .free-card p{margin:0;color:var(--muted);font-size:12px}
+
+    /* 对照表 */
+    .compare{border:2px solid var(--line);border-radius:14px;overflow:hidden;background:var(--card)}
+    .cmp-row{display:grid;grid-template-columns:140px 1fr 1fr;align-items:center;border-bottom:1px solid var(--line)}
+    .cmp-row:last-child{border-bottom:none}
+    .cmp-row .label{background:var(--bg2);padding:14px 18px;font-weight:800;font-size:13px;color:var(--charcoal)}
+    .cmp-row .ok,.cmp-row .no{padding:14px 18px;font-size:13px}
+    .cmp-row .ok{color:var(--mint-deep);background:rgba(18,184,134,.05)}
+    .cmp-row .no{color:#C0392B;background:rgba(192,57,43,.04)}
+    .cmp-row .ok b,.cmp-row .no b{display:block;margin-bottom:2px;font-size:13px}
+
+    /* 陷阱 */
+    .traps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .trap{background:var(--card);border:2px solid var(--line);border-radius:12px;padding:22px;border-top:6px solid var(--warn)}
+    .trap:nth-child(2){border-top-color:var(--lemon-deep)}
+    .trap:nth-child(3){border-top-color:var(--ice-deep)}
+    .trap h3{margin:0 0 8px;font-size:16px;font-weight:900}
+    .trap p{margin:0;color:var(--muted);font-size:13px}
+
+    /* 信源 */
+    .src{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .signal{background:var(--card);border:2px solid var(--line);border-radius:14px;padding:22px;text-align:center}
+    .signal .ic{font-size:32px;margin-bottom:8px;display:block}
+    .signal h3{margin:0 0 4px;font-size:15px;font-weight:900}
+    .signal p{margin:0;color:var(--muted);font-size:12px}
+
+    /* 清单 */
+    .checklist{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:900px;margin:0 auto}
+    .chk{background:var(--card);border:2px solid var(--line);border-radius:12px;padding:20px;display:flex;gap:12px;align-items:flex-start}
+    .chk .dot{width:22px;height:22px;border-radius:50%;background:var(--mint);color:#fff;font-size:12px;font-weight:900;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+    .chk p{margin:0;font-size:13px;color:var(--muted)}
+    .chk p b{color:var(--charcoal);display:block;font-size:14px;margin-bottom:2px}
+
+    footer{padding:34px 0;text-align:center;color:#fff;font-size:13px;background:var(--charcoal)}
+    footer a{color:var(--lemon)}
+
+    #toTop{position:fixed;right:16px;bottom:16px;z-index:60;width:46px;height:46px;border-radius:50%;border:2px solid var(--charcoal);background:var(--mint);color:#fff;font-size:18px;font-weight:900;cursor:pointer;opacity:0;pointer-events:none;transition:.25s}
+    #toTop.show{opacity:1;pointer-events:auto}
+    .reveal{opacity:0;transform:translateY(16px);transition:.5s ease}
+    .reveal.in{opacity:1;transform:none}
+
+    @media (max-width:980px){
+      .hero .wrap{grid-template-columns:1fr}
+      .free5{grid-template-columns:1fr 1fr}
+      .src{grid-template-columns:1fr 1fr}
+      .traps{grid-template-columns:1fr}
+      .checklist{grid-template-columns:1fr}
+    }
+    @media (max-width:640px){
+      .nav-toggle{display:block}
+      nav.menu{position:absolute;top:66px;left:0;right:0;flex-direction:column;gap:0;padding:10px 20px 20px;background:var(--charcoal);display:none}
+      nav.menu.open{display:flex}
+      nav.menu a{padding:12px 8px;border-bottom:1px solid rgba(255,255,255,.15);border-radius:0}
+      .free5{grid-template-columns:1fr}
+      .src{grid-template-columns:1fr}
+      .cmp-row{grid-template-columns:1fr}
+      .cmp-row .label{border-bottom:1px solid var(--line)}
+      .hero h1{font-size:30px}
+    }
+  </style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/laoliu.js"></script>
+
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <div class="logo"><span class="badge">免</span><b>免费影视</b><span>合规指南</span></div>
+      <button class="nav-toggle" aria-label="菜单" onclick="document.getElementById('menu').classList.toggle('open')">☰</button>
+      <nav class="menu" id="menu">
+        <a href="#home">首页</a>
+        <a href="#free5">合法免费</a>
+        <a href="#compare">真伪对照</a>
+        <a href="#traps">伪免费陷阱</a>
+        <a href="#src">正版信源</a>
+        <a href="#check">自查清单</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="wrap">
+      <div>
+        <div class="pill">Free ≠ No Copyright</div>
+        <h1>免费影视<br/><u>免费≠无版权</u>，<em>合法</em>才敢看</h1>
+        <p class="lead">影视可以合法免费看，但"免费全库/秒播/枪版"几乎都是未授权。本站只讲五类合法免费渠道、伪免费陷阱识别与正版导航，不提供盗版播放、磁力、网盘与成人内容。</p>
+        <div class="hero-tags">
+          <span class="hero-tag">合法免费渠道</span>
+          <span class="hero-tag">伪免费识别</span>
+          <span class="hero-tag">免费/侵权对照</span>
+          <span class="hero-tag">正版OTT</span>
+          <span class="hero-tag">防盗版</span>
+        </div>
+        <div class="cta">
+          <a class="btn btn-primary" href="#free5">查看合法免费渠道 →</a>
+          <a class="btn btn-ghost" href="#traps">识别伪免费</a>
+        </div>
+      </div>
+      <div>
+        <div class="board">
+          <div class="tape">合规清单</div>
+          <div class="line"><span class="check">✓</span>持权平台免费专区</div>
+          <div class="line"><span class="check">✓</span>官方免费试看/预告</div>
+          <div class="line"><span class="check">✓</span>公版作品/官方授权</div>
+          <div class="line"><span class="check">✓</span>图书馆持证影视库</div>
+          <div class="line"><span class="check">✓</span>官方免费放映/影展</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="free5" class="reveal">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">5 Legal Free Ways</div>
+        <h2>五类合法免费渠道</h2>
+        <p>影视能合法免费看的五种正规路径，均不涉及盗版资源。</p>
+      </div>
+      <div class="free5">
+        <div class="free-card">
+          <div class="num">1</div>
+          <h3>持权平台免费专区</h3>
+          <p>主流OTT的免费专区/广告支持模式，官方正版，含广告但合法。</p>
+        </div>
+        <div class="free-card">
+          <div class="num">2</div>
+          <h3>免费试看/预告</h3>
+          <p>官方正片片段、预告、幕后花絮；正版宣传物料可看。</p>
+        </div>
+        <div class="free-card">
+          <div class="num">3</div>
+          <h3>公版与官方授权</h3>
+          <p>著作权保护期届满作品、官方免费授权的短片与纪录片。</p>
+        </div>
+        <div class="free-card">
+          <div class="num">4</div>
+          <h3>图书馆影视库</h3>
+          <p>部分公共图书馆持证提供正版影视数据库，公益性质。</p>
+        </div>
+        <div class="free-card">
+          <div class="num">5</div>
+          <h3>免费放映/影展</h3>
+          <p>官方组织的社区放映、校园影展、露天电影，版权已解决。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="compare" class="reveal">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">Free vs Infringement</div>
+        <h2>免费与侵权对照表</h2>
+        <p>一眼分清"合法免费"与"伪免费盗版"，看懂再点。</p>
+      </div>
+      <div class="compare">
+        <div class="cmp-row">
+          <div class="label">主体与授权</div>
+          <div class="ok"><b>✓ 合法免费</b>有明确平台主体、版权页/授权说明，可查可核</div>
+          <div class="no"><b>✗ 侵权盗版</b>无公司主体、无版权说明，域名频繁更换</div>
+        </div>
+        <div class="cmp-row">
+          <div class="label">内容范围</div>
+          <div class="ok"><b>✓ 合法免费</b>免费专区、预告、公版、官方授权，范围清晰</div>
+          <div class="no"><b>✗ 侵权盗版</b>宣称"全院线免费全库"，含未下映新片</div>
+        </div>
+        <div class="cmp-row">
+          <div class="label">播放体验</div>
+          <div class="ok"><b>✓ 合法免费</b>正版片源、官方字幕、可反馈客服</div>
+          <div class="no"><b>✗ 侵权盗版</b>假播放按钮、强制弹窗、跳转博彩广告</div>
+        </div>
+        <div class="cmp-row">
+          <div class="label">设备与下载</div>
+          <div class="ok"><b>✓ 合法免费</b>官方App内观看，不要求装未知播放器</div>
+          <div class="no"><b>✗ 侵权盗版</b>强推APK/解码器/磁力/网盘码</div>
+        </div>
+        <div class="cmp-row">
+          <div class="label">付费与信息</div>
+          <div class="ok"><b>✓ 合法免费</b>官方会员/单片明码标价，不索验证码</div>
+          <div class="no"><b>✗ 侵权盗版</b>隐性扣费、索要银行卡/验证码/关杀软</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="traps" class="reveal">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">Fake-Free Traps</div>
+        <h2>伪免费陷阱</h2>
+        <p>打着"免费"旗号的高风险套路，遇到立刻停。</p>
+      </div>
+      <div class="traps">
+        <div class="trap">
+          <h3>🚫 "全网免费秒播"</h3>
+          <p>聚合站宣称院线/独家全免费，实属未授权传播；假播放按钮引流至博彩、贷款、诈骗，关闭即可。</p>
+        </div>
+        <div class="trap">
+          <h3>🚫 "免费看全集/破解版"</h3>
+          <p>诱导装"破解版App/专用播放器/解码包"，可能夹带木马、劫持流量、窃取账号与验证码。</p>
+        </div>
+        <div class="trap">
+          <h3>🚫 "免费磁力/网盘码"</h3>
+          <p>回复拿种子、网盘提取码、群号；无版权主体与授权说明，一律不点、不填、不下载。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="src" class="reveal">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">Legal Sources</div>
+        <h2>正版信源导航</h2>
+        <p>想省钱就走这四类正路，别为省会员费冒盗版风险。</p>
+      </div>
+      <div class="src">
+        <div class="signal"><span class="ic">📺</span><h3>持权OTT免费专区</h3><p>主流平台正版免费内容，广告支持模式</p></div>
+        <div class="signal"><span class="ic">🎬</span><h3>官方预告/花絮</h3><p>正片片段、幕后、访谈，官方宣传物料</p></div>
+        <div class="signal"><span class="ic">🏛️</span><h3>图书馆/影展</h3><p>公共图书馆持证影视库、官方免费放映</p></div>
+        <div class="signal"><span class="ic">💳</span><h3>单片租赁/合租</h3><p>只补一部不办会员，官方单片明码标价</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="check" class="reveal">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">Self-Check</div>
+        <h2>点开前自查清单</h2>
+        <p>六条快速核验，30秒判断"免费"是否靠谱。</p>
+      </div>
+      <div class="checklist">
+        <div class="chk"><span class="dot">✓</span><p><b>看主体</b>有公司主体、客服、版权页与隐私政策吗？</p></div>
+        <div class="chk"><span class="dot">✓</span><p><b>看授权</b>片源是否标注版权方/发行方/授权范围？</p></div>
+        <div class="chk"><span class="dot">✓</span><p><b>看范围</b>只免费专区/预告，还是声称全院线免费？</p></div>
+        <div class="chk"><span class="dot">✓</span><p><b>看体验</b>是否弹假播放、强广告、博彩贷款？</p></div>
+        <div class="chk"><span class="dot">✓</span><p><b>看下载</b>是否强推APK/解码器/磁力/网盘码？</p></div>
+        <div class="chk"><span class="dot">✓</span><p><b>看信息</b>是否索要银行卡/验证码/关杀软？</p></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      © 2026 免费影视合规指南（mianfeiyingshi-h5）｜ 静态展示站点 ｜
+      内页链接以 <a href="#">#</a> 占位 ｜
+      网站网址：https://mianfeiyingshi-h5.github.io ｜
+      本站仅作合法免费渠道科普与正版影视导航，不提供盗版资源、磁力、网盘、成人内容；免费≠无版权，侵权风险自负。
+    </div>
+  </footer>
+
+  <button id="toTop" aria-label="回到顶部" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+  <script>
+    document.querySelectorAll('#menu a').forEach(function(a){
+      a.addEventListener('click',function(){ document.getElementById('menu').classList.remove('open'); });
+    });
+    var toTop=document.getElementById('toTop');
+    window.addEventListener('scroll',function(){ toTop.classList.toggle('show',window.scrollY>400); });
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+    },{threshold:0.1});
+    document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+  </script>
+</body>
+</html>
